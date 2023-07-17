@@ -1,0 +1,4 @@
+.DS_Store
+*.css
+styles
+node_modules
