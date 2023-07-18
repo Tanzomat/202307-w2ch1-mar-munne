@@ -1,4 +1,57 @@
+@use "../sass/colors";
+@use "../sass/fonts";
+
 * :before,
 :after {
   box-sizing: border-box;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+
+  .product__image {
+    align-self: inherit;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+
+    .text__subtitle {
+      color: colors.$secondary-color-mild;
+      font-family: fonts.$font-title;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+    }
+    .text__title {
+      color: colors.$secondary-color-dark;
+      font-family: fonts.$font-subtitle;
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+    .text__description {
+      color: colors.$secondary-color-mild;
+      font-family: fonts.$font-title;
+      font-size: 0.8rem;
+    }
+    .prices {
+      display: flex;
+      flex-direction: row;
+    }
+    .prices__current {
+      color: colors.$main-color-dark;
+      font-family: fonts.$font-subtitle;
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+    .prices__old {
+      color: colors.$secondary-color-mild;
+      font-family: fonts.$font-title;
+      font-size: 0.8rem;
+    }
+    .button {
+      color: colors.$secondary-color-mild;
+      background-color: colors.$main-color-dark;
+    }
+  }
 }
