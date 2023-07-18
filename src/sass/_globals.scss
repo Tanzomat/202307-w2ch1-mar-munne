@@ -9,6 +9,9 @@
 .component {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  padding-top: none;
 
   .product__image {
     align-self: inherit;
@@ -16,6 +19,8 @@
   .text {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    padding: 10px;
 
     .text__subtitle {
       color: colors.$secondary-color-mild;
@@ -26,7 +31,7 @@
     .text__title {
       color: colors.$secondary-color-dark;
       font-family: fonts.$font-subtitle;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       font-weight: 700;
     }
     .text__description {
@@ -37,6 +42,7 @@
     .prices {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
     }
     .prices__current {
       color: colors.$main-color-dark;
@@ -48,10 +54,12 @@
       color: colors.$secondary-color-mild;
       font-family: fonts.$font-title;
       font-size: 0.8rem;
+      text-decoration: line-through;
     }
     .button {
-      color: colors.$secondary-color-mild;
+      color: colors.$secondary-color-light;
       background-color: colors.$main-color-dark;
+      font-family: fonts.$font-title;
     }
   }
 }
